@@ -29,7 +29,7 @@ from bot.core.handlers.big_rename import handle_big_rename
 async def rename_handler(c: Client, m: Message):
     # Checks
     if not m.from_user:
-        return await m.reply_text("I don't know about you sar :(")
+        return await m.reply_text("I don't know about you sir :(")
     if m.from_user.id not in Config.PRO_USERS:
         is_in_gap, sleep_time = await check_time_gap(m.from_user.id)
         if is_in_gap:
